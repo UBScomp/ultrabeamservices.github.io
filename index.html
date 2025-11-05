@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional cleaning services in Silver Spring, MD. Residential, commercial, post-construction. Licensed, insured, 100% satisfaction guaranteed. Book online today!">
+    <title>Silver Spring Cleaning Services | Professional House Cleaning | Ultra Beam Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #2C5AA0;
+            --secondary-color: #4A90E2;
+            --accent-color: #00C853;
+            --dark-color: #1a1a1a;
+            --light-color: #f8f9fa;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .cta-button {
+            background: var(--accent-color);
+            color: var(--white);
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #00a844;
+        }
+
+        .phone-number {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Hero Section with Background Image */
+        .hero {
+            background: linear-gradient(135deg, rgba(44, 90, 160, 0.95) 0%, rgba(74, 144, 226, 0.95) 100%),
+                        url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1600&q=80') center/cover;
+            color: var(--white);
+            padding: 150px 20px 100px;
+            text-align: center;
+            margin-top: 80px;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(44, 90, 160, 0.9) 0%, rgba(74, 144, 226, 0.9) 100%);
+            z-index: 1;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--accent-color);
+            color: var(--white);
+            padding: 1rem 2.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .btn-primary:hover {
+            background: #00a844;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        .btn-secondary {
+            background: var(--white);
+            color: var(--primary-color);
+            padding: 1rem 2.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .btn-secondary:hover {
+            background: var(--light-color);
+            transform: translateY(-2px);
+        }
+
+        /* Trust Badges */
+        .trust-badges {
+            background: var(--white);
+            padding: 2rem 20px;
+            text-align: center;
+        }
+
+        .badges-container {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .badge {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .badge-icon {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+        }
+
+        .badge h3 {
+            font-size: 1rem;
+            color: var(--dark-color);
+        }
+
+        /* Services Section with Background */
+        .services {
+            padding: 80px 20px;
+            background: linear-gradient(rgba(248, 249, 250, 0.95), rgba(248, 249, 250, 0.95)),
+                        url('https://images.unsplash.com/photo-1563453392212-326f5e854473?w=1600&q=80') center/cover fixed;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            color: #666;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .service-card p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .service-card ul {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card ul li {
+            padding: 0.5rem 0;
+            color: #666;
+        }
+
+        .service-card ul li:before {
+            content: "✓ ";
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .price-tag {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin: 1rem 0;
+        }
+
+        /* Photo Gallery Section */
+        .photo-gallery {
+            padding: 60px 20px;
+            background: var(--white);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            height: 250px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+            padding: 1rem;
+            font-weight: 500;
+        }
+
+        /* Business Systems Section */
+        .business-systems {
+            padding: 80px 20px;
+            background: linear-gradient(rgba(44, 90, 160, 0.05), rgba(74, 144, 226, 0.05));
+        }
+
+        .systems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .system-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .system-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .system-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .system-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .system-card p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* About Section with Background */
+        .about {
+            padding: 80px 20px;
+            background: linear-gradient(rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.97)),
+                        url('https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=1600&q=80') center/cover fixed;
+        }
+
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .value-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .value-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Contact Section with Subtle Background */
+        .contact {
+            padding: 80px 20px;
+            background: linear-gradient(rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.98)),
+                        url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80') center/cover fixed;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .contact-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item h4 {
+            color: var(--dark-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item p, .contact-item a {
+            color: #666;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .contact-item a:hover {
+            color: var(--secondary-color);
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            margin-bottom: 0.5rem;
+            color: var(--dark-color);
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            background: var(--accent-color);
+            color: var(--white);
+            padding: 1rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #00a844;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 80px 20px;
+            background: var(--light-color);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-color);
+            color: var(--white);
+            padding: 3rem 20px 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #444;
+            color: #999;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary-color);
+        }
+
+        /* Service Areas */
+        .service-areas {
+            background: linear-gradient(rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.97)),
+                        url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1600&q=80') center/cover;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .areas-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .area-tag {
+            background: var(--light-color);
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--white);
+                flex-direction: column;
+                padding: 2rem;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#home" class="logo">Ultra <span>Beam</span></a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#systems">Our Systems</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="tel:240-755-4986" class="phone-number">📞 (240) 755-4986</a></li>
+                <li><a href="#contact" class="cta-button">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>DMV's Most Reliable Cleaning Service</h1>
+            <p>Professional cleaning you can trust. Licensed, insured, and 100% satisfaction guaranteed.</p>
+            <div class="hero-buttons">
+                <a href="tel:240-755-4986" class="btn-primary">Call Now: (240) 755-4986</a>
+                <a href="#services" class="btn-secondary">View Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="trust-badges">
+        <div class="badges-container">
+            <div class="badge">
+                <div class="badge-icon">✓</div>
+                <h3>Licensed & Insured</h3>
+            </div>
+            <div class="badge">
+                <div class="badge-icon">⭐</div>
+                <h3>4.9-Star Rated</h3>
+            </div>
+            <div class="badge">
+                <div class="badge-icon">🏆</div>
+                <h3>100% Satisfaction Guaranteed</h3>
+            </div>
+            <div class="badge">
+                <div class="badge-icon">🌿</div>
+                <h3>Eco-Friendly Products</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="photo-gallery">
+        <div class="container">
+            <h2 class="section-title">See Our Work</h2>
+            <p class="section-subtitle">Professional results you can see and trust</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&q=80" alt="Modern kitchen cleaning">
+                    <div class="gallery-caption">Sparkling Clean Kitchens</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=400&q=80" alt="Bathroom deep cleaning">
+                    <div class="gallery-caption">Spotless Bathrooms</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&q=80" alt="Living room cleaning">
+                    <div class="gallery-caption">Fresh Living Spaces</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=400&q=80" alt="Professional cleaning supplies">
+                    <div class="gallery-caption">Professional Equipment</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Cleaning Services</h2>
+            <p class="section-subtitle">Professional cleaning solutions for every need</p>
+
+            <div class="services-grid">
+                <!-- Residential Cleaning -->
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Residential Cleaning</h3>
+                    <p>Keep your home sparkling clean with our professional residential cleaning services.</p>
+                    <ul>
+                        <li>Standard cleaning</li>
+                        <li>Deep cleaning</li>
+                        <li>Move-in/move-out</li>
+                        <li>Recurring services available</li>
+                    </ul>
+                    <div class="price-tag">Starting at $130</div>
+                    <p style="color: #999; font-size: 0.9rem;">1BR Standard Clean</p>
+                </div>
+
+                <!-- Commercial Cleaning -->
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Commercial Cleaning</h3>
+                    <p>Professional office cleaning services to keep your workplace pristine and productive.</p>
+                    <ul>
+                        <li>Office buildings</li>
+                        <li>Retail spaces</li>
+                        <li>Medical facilities</li>
+                        <li>Flexible scheduling</li>
+                        <li><strong>After-hours cleaning available</strong></li>
+                    </ul>
+                    <p style="color: #00C853; font-weight: 600; font-size: 0.95rem;">We offer after-hours cleaning - Contact us for a custom quote!</p>
+                    <div class="price-tag">Starting at $0.10/sq ft</div>
+                    <p style="color: #999; font-size: 0.9rem;">Monthly service (2x weekly)</p>
+                </div>
+
+                <!-- Post-Construction -->
+                <div class="service-card">
+                    <div class="service-icon">🔨</div>
+                    <h3>Post-Construction Cleaning</h3>
+                    <p>Specialized cleaning for newly built or renovated properties. Get move-in ready fast.</p>
+                    <ul>
+                        <li>New construction</li>
+                        <li>Renovation clean-up</li>
+                        <li>Dust and debris removal</li>
+                        <li>Final clean for occupancy</li>
+                    </ul>
+                    <div class="price-tag">Starting at $0.35/sq ft</div>
+                    <p style="color: #999; font-size: 0.9rem;">Complete service</p>
+                    <p style="color: #666; font-size: 0.9rem; margin-top: 10px;"><strong>Example estimates:</strong></p>
+                    <p style="color: #666; font-size: 0.85rem;">• 2,000 sq ft home: ~$700-800</p>
+                    <p style="color: #666; font-size: 0.85rem;">• 3,500 sq ft home: ~$1,200-1,400</p>
+                    <p style="color: #666; font-size: 0.85rem;">• 5,000 sq ft commercial: ~$2,000-2,500</p>
+                </div>
+            </div>
+
+            <!-- Pricing Details -->
+            <div style="margin-top: 4rem; background: white; padding: 2rem; border-radius: 10px;">
+                <h3 style="color: var(--primary-color); text-align: center; margin-bottom: 2rem;">Residential Cleaning Pricing</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; text-align: center;">
+                    <div>
+                        <h4>1 Bedroom</h4>
+                        <p style="color: #666;">Standard: $130</p>
+                        <p style="color: #666;">Deep: $180</p>
+                        <p style="color: #666;">Move-Out: $200</p>
+                    </div>
+                    <div>
+                        <h4>2 Bedrooms</h4>
+                        <p style="color: #666;">Standard: $160</p>
+                        <p style="color: #666;">Deep: $210</p>
+                        <p style="color: #666;">Move-Out: $230</p>
+                    </div>
+                    <div>
+                        <h4>3 Bedrooms</h4>
+                        <p style="color: #666;">Standard: $190</p>
+                        <p style="color: #666;">Deep: $260</p>
+                        <p style="color: #666;">Move-Out: $290</p>
+                    </div>
+                    <div>
+                        <h4>4+ Bedrooms</h4>
+                        <p style="color: #666;">Standard: $230</p>
+                        <p style="color: #666;">Deep: $330</p>
+                        <p style="color: #666;">Move-Out: $370</p>
+                    </div>
+                </div>
+                <p style="text-align: center; margin-top: 2rem; color: #666; font-weight: bold;">Recurring Services: Weekly 15% off • Bi-weekly 10% off • Monthly 5% off</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Systems Section -->
+    <section class="business-systems" id="systems">
+        <div class="container">
+            <h2 class="section-title">Professional Business Systems</h2>
+            <p class="section-subtitle">We use industry-leading tools to deliver exceptional service</p>
+            
+            <div class="systems-grid">
+                <div class="system-card">
+                    <div class="system-icon">📅</div>
+                    <h3>Online Booking</h3>
+                    <p>Easy scheduling through Calendly - book your appointment 24/7 at your convenience</p>
+                </div>
+                
+                <div class="system-card">
+                    <div class="system-icon">💳</div>
+                    <h3>Secure Payments</h3>
+                    <p>Safe, encrypted payment processing through Square with multiple payment options</p>
+                </div>
+                
+                <div class="system-card">
+                    <div class="system-icon">📊</div>
+                    <h3>Customer Management</h3>
+                    <p>HubSpot CRM ensures we track every detail and deliver consistent, personalized service</p>
+                </div>
+                
+                <div class="system-card">
+                    <div class="system-icon">📧</div>
+                    <h3>Automated Reminders</h3>
+                    <p>Email and text notifications so you never miss an appointment</p>
+                </div>
+                
+                <div class="system-card">
+                    <div class="system-icon">⭐</div>
+                    <h3>Quality Tracking</h3>
+                    <p>We monitor satisfaction and follow up after every service to ensure excellence</p>
+                </div>
+                
+                <div class="system-card">
+                    <div class="system-icon">📱</div>
+                    <h3>Mobile Technology</h3>
+                    <p>Our team uses mobile apps for efficient service and real-time updates</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 3rem; text-align: center; background: white; padding: 2rem; border-radius: 10px;">
+                <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Why Our Systems Matter to You</h3>
+                <p style="color: #666; max-width: 800px; margin: 0 auto; line-height: 1.8;">
+                    We invest in professional business systems so you get a seamless experience from booking to payment. 
+                    Unlike many cleaning services, we provide transparent scheduling, secure payment processing, 
+                    automated reminders, and proactive follow-up. Our technology ensures reliability, consistency, 
+                    and peace of mind - every single time.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Ultra Beam Services</h2>
+            <div class="about-content">
+                <p>Founded in 2025, Ultra Beam Services was born from a simple belief: everyone deserves a clean, healthy space without the stress of doing it themselves. We understand that in today's fast-paced world, time is your most valuable asset. That's why we created a cleaning service that goes beyond just tidying up—we deliver peace of mind.</p>
+                
+                <p>What started as a mission to serve our Silver Spring community has grown into a trusted name across the DMV area. We take pride in our attention to detail, reliability, and the genuine care we bring to every home and business we service. When you choose Ultra Beam, you're not just hiring cleaners—you're partnering with professionals who treat your space as if it were their own.</p>
+
+                <p>Our team is fully licensed, insured, and background-checked. We use eco-friendly products that are safe for your family, pets, and the environment. Every member of the Ultra Beam team is trained in our proven cleaning methods that guarantee consistent, exceptional results every single time.</p>
+
+                <div class="values-grid">
+                    <div class="value-item">
+                        <h3>🎯 Reliability</h3>
+                        <p>We show up on time, every time, ready to deliver exceptional service.</p>
+                    </div>
+                    <div class="value-item">
+                        <h3>⭐ Quality</h3>
+                        <p>Meticulous attention to detail in every corner of your space.</p>
+                    </div>
+                    <div class="value-item">
+                        <h3>💚 Eco-Friendly</h3>
+                        <p>Safe, green cleaning products that protect your health and our planet.</p>
+                    </div>
+                    <div class="value-item">
+                        <h3>🤝 Trust</h3>
+                        <p>Background-checked professionals you can welcome into your home with confidence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section class="service-areas">
+        <div class="container">
+            <h2 class="section-title">Proudly Serving the DMV Area</h2>
+            <p class="section-subtitle">Professional cleaning services throughout Montgomery County and beyond</p>
+            <div class="areas-list">
+                <span class="area-tag">Silver Spring</span>
+                <span class="area-tag">Bethesda</span>
+                <span class="area-tag">Rockville</span>
+                <span class="area-tag">Wheaton</span>
+                <span class="area-tag">Takoma Park</span>
+                <span class="area-tag">Kensington</span>
+                <span class="area-tag">Gaithersburg</span>
+                <span class="area-tag">Potomac</span>
+                <span class="area-tag">Chevy Chase</span>
+                <span class="area-tag">Forest Glen</span>
+                <span class="area-tag">Burtonsville</span>
+                <span class="area-tag">Olney</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do I need to provide cleaning supplies?
+                    </div>
+                    <div class="faq-answer">
+                        No! We bring all necessary cleaning supplies and equipment. We use professional-grade, eco-friendly products that are safe for your family and pets.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Are you insured and bonded?
+                    </div>
+                    <div class="faq-answer">
+                        Yes, Ultra Beam Services is fully licensed, insured, and bonded. We carry general liability insurance and workers' compensation coverage for your complete peace of mind.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What's included in a standard cleaning?
+                    </div>
+                    <div class="faq-answer">
+                        Our standard cleaning includes dusting all surfaces, vacuuming and mopping floors, cleaning bathrooms (toilet, shower, sink, mirrors), kitchen cleaning (counters, sink, appliances), trash removal, and general tidying.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How long does a cleaning take?
+                    </div>
+                    <div class="faq-answer">
+                        Cleaning time varies by home size and service type. A standard clean for a 2-bedroom home typically takes 2-3 hours. We'll provide an estimated time when you book.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What if I'm not satisfied with the cleaning?
+                    </div>
+                    <div class="faq-answer">
+                        We offer a 100% satisfaction guarantee. If you're not happy with any aspect of our service, contact us within 24 hours and we'll return to address your concerns at no additional charge.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do you offer recurring cleaning services?
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely! We offer weekly, bi-weekly, and monthly recurring services with discounts: 15% off weekly, 10% off bi-weekly, and 5% off monthly services.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do you offer after-hours cleaning for businesses?
+                    </div>
+                    <div class="faq-answer">
+                        Yes! We understand businesses need flexible scheduling. We offer after-hours and weekend cleaning for commercial clients. Contact us for a custom quote tailored to your schedule.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get Your Free Quote Today</h2>
+            <p class="section-subtitle">Ready for a cleaner space? Contact us now!</p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-item">
+                        <h4>📞 Phone</h4>
+                        <p><a href="tel:240-755-4986">(240) 755-4986</a></p>
+                        <p style="font-size: 0.9rem;">Text or call anytime</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>✉️ Email</h4>
+                        <p><a href="mailto:ultrabeamservices@gmail.com">ultrabeamservices@gmail.com</a></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>📍 Service Area</h4>
+                        <p>Silver Spring, MD and surrounding DMV area</p>
+                        <p style="font-size: 0.9rem;">Serving Montgomery County, DC, and Northern Virginia</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>⏰ Hours</h4>
+                        <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                        <p>Saturday: 9:00 AM - 5:00 PM</p>
+                        <p>Sunday: Closed</p>
+                        <p style="font-size: 0.9rem; color: var(--accent-color); font-weight: 600; margin-top: 0.5rem;">After-hours cleaning available for businesses!</p>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 1rem; color: var(--primary-color);">Request a Quote</h3>
+                    <form action="https://formspree.io/f/ultrabeamservices@gmail.com" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Needed *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service...</option>
+                                <option value="residential">Residential Cleaning</option>
+                                <option value="commercial">Commercial Cleaning</option>
+                                <option value="commercial-afterhours">Commercial After-Hours Cleaning</option>
+                                <option value="post-construction">Post-Construction Cleaning</option>
+                                <option value="move-out">Move-In/Move-Out</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Additional Details</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your cleaning needs, home size, preferred date, etc."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Get Free Quote</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Ultra Beam Services</h3>
+                <p style="color: #ccc;">Professional cleaning services you can trust. Licensed, insured, and committed to excellence.</p>
+                <p style="margin-top: 1rem; color: #ccc;">📞 (240) 755-4986</p>
+                <p style="color: #ccc;">✉️ ultrabeamservices@gmail.com</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="#services">Residential Cleaning</a></li>
+                    <li><a href="#services">Commercial Cleaning</a></li>
+                    <li><a href="#services">After-Hours Cleaning</a></li>
+                    <li><a href="#services">Post-Construction Cleaning</a></li>
+                    <li><a href="#services">Move-In/Move-Out</a></li>
+                    <li><a href="#services">Deep Cleaning</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Service Areas</h3>
+                <ul>
+                    <li>Silver Spring, MD</li>
+                    <li>Bethesda, MD</li>
+                    <li>Rockville, MD</li>
+                    <li>Wheaton, MD</li>
+                    <li>Takoma Park, MD</li>
+                    <li>Montgomery County</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#systems">Our Systems</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="tel:240-755-4986">Call Now</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Ultra Beam Services. All rights reserved. Licensed & Insured in Maryland.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    document.getElementById('navLinks').classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
